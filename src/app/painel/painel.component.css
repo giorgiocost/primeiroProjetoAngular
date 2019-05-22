@@ -1,0 +1,22 @@
+div {
+    padding: 2%;
+    margin: 6% 10% 3% 10%;
+    width: 76%;
+    height: 80%;
+    background: #999;
+}
+
+label{
+    position: relative;
+    top: 17px;
+}
+
+small{
+    color: red;
+}
+
+textarea{
+    resize: none;
+    margin: 2% 0;
+}
+

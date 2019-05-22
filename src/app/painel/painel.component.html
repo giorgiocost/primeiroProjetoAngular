@@ -1,0 +1,17 @@
+<div>
+    <app-progresso [progresso]="progressoPainel"></app-progresso>
+    <label for="frase">Traduza esta frase:</label><br><br>
+    <small>{{rodadaFrase["fraseEnglish"]}}</small><br>
+    <app-tentativa></app-tentativa>
+    <textarea id="frase" cols="74%" rows="10"
+        (input) = atualizarResposta($event)
+        [value]="resposta"
+    ></textarea><br>
+    <button class="btn btn-primary"
+      (click) = verificarResposta()  
+    >Verificar</button>
+</div>
+
+
+<span [class]="alerta">{{msg}}</span>
+
